@@ -32,6 +32,11 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+  <!-- Mapbox Cs links -->
+<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+<script src='https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.js'></script>
+<link href='https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.css' rel='stylesheet' />
+<link href="assets/css/mapbox.css" rel="stylesheet">
 </head>
 
 <body>
@@ -70,6 +75,9 @@
     <div class="container">
       <a class="navbar-brand" href="index.html">MyPortfolio.</a>
 
+     
+
+
       <a href="#" class="burger" data-toggle="collapse" data-target="#main-navbar">
         <span></span>
       </a>
@@ -83,10 +91,20 @@
       <div class="container">
         <div class="row mb-4 align-items-center">
           <div class="col-md-6" data-aos="fade-up">
-
-            <h2>My Services</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam necessitatibus incidunt ut officiis
-              explicabo inventore.</p>
+<!-- The code for map to display on the webpage -->
+            <h2>Mapbox Plot</h2>
+            <div id="container"> 
+              <h1> Hello</h1>
+            <div id="map"></div>
+            <pre id="sidebarStyle"></pre>
+          </div>
+          <div>
+            <img id="xictePhoto" src='https://bit.ly/2VOxPZk'
+       
+     
+            />
+           </div>
+           
 
           </div>
 
@@ -222,7 +240,14 @@
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+<!-- Links to Js for mapbox -->
+<script src="assets/js/mapbox.js"></script>
 
+  <script src="https://api.mapbox.com/mapbox-gl-js/v1.9.0/mapbox-gl.js"></script>
+  <script src="https://api.mapbox.com/mapbox-gl-js/v1.9.0/mapbox-gl.js"></script>
+  <!--<script src="{{url_for('static', filename='assets/js/mapbox.js')}}"></script> -->
+  
+  
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 

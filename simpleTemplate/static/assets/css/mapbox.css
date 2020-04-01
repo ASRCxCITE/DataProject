@@ -1,0 +1,86 @@
+/* body {
+  background-color: purple;
+  
+} */
+/* This is the div that holds the map */ 
+#container{
+  background-color: purple;
+  margin: 0; 
+  padding: 0;
+  height: 400px;
+  /* width: 500px; */
+  width: 100%;
+  float: left;
+  padding-right: 20px;
+}
+/* The styling of the map */
+  #map { position: absolute; top: 0; bottom: 0; width: 0%; 
+    
+    height: 100%;}
+  /* Style of the bar that displays long and lat */
+  #sidebarStyle {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 12px;
+    background-color: #404040;
+    color: #ffffff;
+    z-index: 1 !important;
+    padding: 6px;
+    font-weight: bold;
+        }
+  
+   .mapboxgl-popup {
+    max-width: 200px;
+    }
+        
+  .mapboxgl-popup-content {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+        }
+  
+  .marker {
+    background-image: url('https://i.imgur.com/MK4NUzI.png');
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  
+
+  .map_box_container{
+    position: relative;
+    height: 100% !important;
+    width: 100% !important;
+  }
+  
+    #map {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 100%;
+    }
+  
+  #xictePhoto{
+    position: absolute;
+    top: 0px;
+    /* right: 0px; */
+    float: left;
+    width:95% ;
+    height: 90% ;
+    padding-left: 40px;
+  }
+  .graph{
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    width:45% ;
+    height: 40% ;
+  
+  }
+  body{
+    background-color: "blue";
+  }
