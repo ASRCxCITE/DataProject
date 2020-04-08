@@ -28,7 +28,7 @@ var geojson = {
 defaultLng = -77.0930;
 defualtLat = 43.3802;
 defaultZoom = 5.5;
-/* Create the map */ 
+/* Create the map */
 var map = new mapboxgl.Map({
 container: 'map', // container id
 style: 'mapbox://styles/mapbox/streets-v11',
@@ -50,11 +50,13 @@ geojson.features.forEach(function(marker) {
   .addTo(map);
 });
 
+
 /* display long and lat of the map */
 map.on('mousemove', function(e) {
   document.getElementById('sidebarStyle').innerHTML =
   // e.lngLat is the longitude, latitude geographical position of the event
   JSON.stringify(e.lngLat.wrap());
   });
+  
 /* make the map resizeable */
 map.addControl(new mapboxgl.FullscreenControl());
