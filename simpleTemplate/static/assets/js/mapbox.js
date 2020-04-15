@@ -1,3 +1,4 @@
+var latLong;
 mapboxgl.accessToken = 'pk.eyJ1IjoiaWExNDI0IiwiYSI6ImNrNzNudm9sbDAwOXAzbHM2MmQwZ3V6bHIifQ.7IOqo3oij916e_KmDfj7DA';
 var geojson = {
   type: 'FeatureCollection',
@@ -9,7 +10,9 @@ var geojson = {
     },
     properties: {
       title: 'Xcite Lab',
-      description: 'Albany NY'
+      description: 'Albany NY',
+      media: [ 'https://bit.ly/2VOxPZk'
+      ]
     }
   },
   {
@@ -20,7 +23,7 @@ var geojson = {
     },
     properties: {
       title: 'Mapbox',
-      description: 'Washington , DC'
+      description: 'Washingto , DC'
     }
   }]
 };
@@ -48,6 +51,9 @@ geojson.features.forEach(function(marker) {
 .setPopup(new mapboxgl.Popup({ offset: 25 }) // add popups
     .setHTML('<h3>' + marker.properties.title + '</h3><p>' + marker.properties.description + '</p>'))
   .addTo(map);
+  
+ 
+  
 });
 
 
@@ -56,7 +62,18 @@ map.on('mousemove', function(e) {
   document.getElementById('sidebarStyle').innerHTML =
   // e.lngLat is the longitude, latitude geographical position of the event
   JSON.stringify(e.lngLat.wrap());
+  latLong = "De"
   });
-  
+
+  map.on('click', function(e) {
+    document.getElementById('sidebarStyle').innerHTML =
+    // e.lngLat is the longitude, latitude geographical position of the event
+    JSON.stringify(e.lngLat.wrap());
+    
+    });
 /* make the map resizeable */
 map.addControl(new mapboxgl.FullscreenControl());
+
+console.log("Hello");
+console.log("Neu");
+console.log(latLong);
