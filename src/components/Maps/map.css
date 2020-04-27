@@ -1,0 +1,44 @@
+.sidebarStyle {
+  display: inline-block;
+  position: absolute;
+  margin: 12px;
+  background-color: #404040;
+  color: #ffffff;
+  z-index: 1 !important;
+  padding: 6px;
+  font-weight: bold;
+}
+
+ .mapContainer {
+  position: absolute;
+  width: 70%; 
+    height: 50%;
+ 
+} 
+
+.marker {
+  background-image: url('mapbox-icon.png');
+  background-size: cover;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.mapboxgl-popup {
+  max-width: 200px;
+}
+
+.mapboxgl-popup-content {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+.xictePhoto{
+  float:left; 
+  top: 100%;
+  right: 0px;
+  width:45% ;
+  height: 40% ;
+}

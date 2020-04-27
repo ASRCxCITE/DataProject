@@ -1,0 +1,18 @@
+.PageDiv
+{
+    display: block; /* because <main/> is very new */
+    float: left;
+   
+}
+.MapDiv{
+   padding-bottom: 40px;
+   
+}
+
+.GraphDiv{
+    position: absolute;
+    top: 100%;
+    right: 20px;
+    width:45% ;
+    height: 40% ;
+}
